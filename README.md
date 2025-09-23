@@ -1,8 +1,8 @@
-# sm64jsarchive-mmo-server
+# mmo64-server
 
 ## Links
 
-[Main Website: sm64jsarchive.com](https://sm64jsarchive.com)
+[Main Website](https://mmo64.netlify.app)
 
 [Discord Server](https://discord.gg/eA5hkV4nnU)
 
@@ -21,7 +21,7 @@
 
 ## Development
 
-Run `git clone https://github.com/sm64jsarchived/sm64jsarchive.git client` to get the client.
+Run `git clone https://github.com/mmo64/mmo64-client.git client` to get the client.
 
 The server will also serve client assets, so they first need to be compiled.
 You will have to navigate to the `client` folder and run `npm run build` once after installing dependencies
