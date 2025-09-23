@@ -140,7 +140,7 @@ Only authorized moderators are allowed to fetch the APIs that require authentifi
                 Cors::default()
                     .allow_any_header()
                     .allow_any_method()
-                    .allowed_origin("https://mmo64.netlify.app")
+                    .allow_any_origin()
                     .supports_credentials()
                     .max_age(3600),
             )
