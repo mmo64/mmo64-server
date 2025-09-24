@@ -452,7 +452,7 @@ impl Handler<SendPlayerList> for Sm64JsServer {
             sum <= 6000 && field_sum <= 25
         });
         let author = sm64js_common::DiscordRichEmbedAuthor {
-            name: format!("Players online: {}", self.players.len()),
+            name: format!("{} player(s) online", self.players.len()),
             url: None,
             icon_url: None,
         };
