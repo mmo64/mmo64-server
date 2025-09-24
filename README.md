@@ -2,7 +2,7 @@
 
 ## Links
 
-[Main Website](https://mmo64.netlify.app)
+[Main Website](https://mmo64.github.io)
 
 [Discord Server](https://discord.gg/eA5hkV4nnU)
 
