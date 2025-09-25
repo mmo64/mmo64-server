@@ -21,7 +21,7 @@
 
 ## Development
 
-Run `git clone https://github.com/mmo64/mmo64-client.git client` to get the client.
+Run `git clone --recurse-submodules https://github.com/mmo64/mmo64-server.git` to get the server and the client submodule.
 
 The server will also serve client assets, so they first need to be compiled.
 You will have to navigate to the `client` folder and run `npm run build` once after installing dependencies
