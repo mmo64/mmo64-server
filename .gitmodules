@@ -1,0 +1,3 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/mmo64/mmo64-client.git
