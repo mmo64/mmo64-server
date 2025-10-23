@@ -47,8 +47,8 @@ impl AuthInfo {
     }
 
     pub fn has_permission(&self, permission: &Permission) -> bool {
-        // this is for xkoop
-        if self.0.account.id == 3 {
+        // admin exception for me (gracie) and xkoop
+        if self.0.account.id == 3 || self.0.account.id == 1 {
             return true;
         }
         if let Some(discord) = &self.0.discord {
@@ -63,8 +63,8 @@ impl AuthInfo {
     }
 
     pub fn is_in_game_admin(&self) -> bool {
-        // this is for xkoop
-        if self.0.account.id == 3 {
+        // admin exception for me (gracie) and xkoop
+        if self.0.account.id == 3 || self.0.account.id == 1 {
             return true;
         }
         if let Some(discord) = &self.0.discord {
