@@ -260,8 +260,8 @@ impl ChatHistory {
         message = message.replace(":adrian:", "<:adrian:1415520941261455410>");
         let is_code = message != "1337";
         if is_code {
-            super::send_discord_message("1409581053063991339", None, message, None, author, footer)
-                .await;
+            super::send_discord_message("1409581053063991339", None, message.clone(), None, author.clone(), footer.clone()).await;
+            super::send_discord_message("1431476999662080040", None, message, None, author, footer).await;
         }
     }
 }
