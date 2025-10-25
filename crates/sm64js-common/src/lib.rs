@@ -113,7 +113,7 @@ struct DiscordRichEmbed {
     footer: Option<DiscordRichEmbedFooter>,
 }
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone)]
 pub struct DiscordRichEmbedField {
     pub name: String,
     pub value: String,
