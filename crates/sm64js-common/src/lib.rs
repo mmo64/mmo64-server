@@ -119,14 +119,14 @@ pub struct DiscordRichEmbedField {
     pub value: String,
 }
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone)]
 pub struct DiscordRichEmbedAuthor {
     pub name: String,
     pub url: Option<String>,
     pub icon_url: Option<String>,
 }
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone)]
 pub struct DiscordRichEmbedFooter {
     pub text: String,
 }
