@@ -463,9 +463,9 @@ impl Handler<SendPlayerList> for Sm64JsServer {
             #[cfg(not(debug_assertions))]
             let channel_id = "1404940809303887983";
             #[cfg(debug_assertions)]
-            let message_id = "1404941248804032593";
+            let message_id = "1441524334026948739";
             #[cfg(not(debug_assertions))]
-            let message_id = "1404941248804032593";
+            let message_id = "1441524334026948739";
             send_discord_message(
                 channel_id,
                 Some(message_id),
