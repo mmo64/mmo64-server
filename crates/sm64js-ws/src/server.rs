@@ -458,6 +458,8 @@ impl Handler<SendPlayerList> for Sm64JsServer {
         };
 
         actix::spawn(async move {
+            let channel_id = "1404940809303887983";
+            let message_id = "1404941248804032593";
             send_discord_message(
                 "1404940809303887983",
                 Some("1404941248804032593"),
