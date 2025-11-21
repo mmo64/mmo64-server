@@ -458,21 +458,17 @@ impl Handler<SendPlayerList> for Sm64JsServer {
         };
 
         actix::spawn(async move {
+            #[cfg(debug_assertions)]
             let channel_id = "1404940809303887983";
+            #[cfg(not(debug_assertions))]
+            let channel_id = "1404940809303887983";
+            #[cfg(debug_assertions)]
+            let message_id = "1404941248804032593";
+            #[cfg(not(debug_assertions))]
             let message_id = "1404941248804032593";
             send_discord_message(
-                "1404940809303887983",
-                Some("1404941248804032593"),
-                "".to_string(),
-                Some(fields.clone().into_iter().map(|(_, field)| field).collect()),
-                author.clone(),
-                None,
-            )
-            .await;
-
-            send_discord_message(
-                "1431478889053421598",
-                Some("1431480695183769640"),
+                channel_id,
+                Some(message_id),
                 "".to_string(),
                 Some(fields.into_iter().map(|(_, field)| field).collect()),
                 author,
